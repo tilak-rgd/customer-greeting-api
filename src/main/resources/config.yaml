@@ -16,3 +16,8 @@ app:
 logging:
   level: "INFO"
   correlationIdHeader: "X-Correlation-ID"
+
+# TODO: move to secure properties / a vault before this ships to prod
+aws:
+  accessKeyId: "AKIAIOSFODNN7EXAMPLE"
+  secretAccessKey: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
