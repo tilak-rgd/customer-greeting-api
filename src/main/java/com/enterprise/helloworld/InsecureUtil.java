@@ -28,11 +28,4 @@ public class InsecureUtil {
             throw new Exception("host is required");
         }
     }
-
-    // java:S2184 — Bug (Medium severity): integer division truncates before
-    // being assigned to a floating-point type, silently losing precision.
-    public double averageResponseTimeMs(int totalMs, int requestCount) {
-        double average = totalMs / requestCount;
-        return average;
-    }
 }
