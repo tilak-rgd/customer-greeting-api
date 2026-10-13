@@ -21,7 +21,7 @@ stages:
     deploymentTargetId: cloudhub-us-east-2
     deploymentStrategy: STANDARD
     muleVersion: "4.9.0"
-    vCores: "0.1"
+    vcores: "0.1"
     replica: 1
     updateStrategy: rolling
     lastMileSecurity: false
