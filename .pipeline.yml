@@ -5,3 +5,5 @@ stages:
     type: BUILD
   - name: Test
     type: TEST
+  - name: Security scan
+    type: SECURITY_SCAN
