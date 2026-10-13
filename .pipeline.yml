@@ -1,0 +1,7 @@
+name: customer-greeting-api (GitOps demo)
+description: Pipeline defined in Git and synced by opsbridge GitOps
+stages:
+  - name: Build
+    type: BUILD
+  - name: Test
+    type: TEST
