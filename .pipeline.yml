@@ -5,5 +5,26 @@ stages:
     type: BUILD
   - name: Test
     type: TEST
+    repoId: 077c4a1b-3834-40bc-9c46-80b423093d88
+    branchName: gitops-demo
   - name: Security scan
     type: SECURITY_SCAN
+  - name: Deploy to DEV
+    type: DEPLOY
+    organizationId: 1c9d76b2-92d1-4646-8b7b-283fd2d38753
+    organizationName: cloudfulCrum
+    environmentId: 92eb19c9-4802-4196-aaaa-33d43fd5caac
+    environmentName: DEV
+    domainName: customer-greeting-api
+    deploymentType: ANYPOINTHYCLOUDHUB2
+    deploymentTargetType: SINGLE
+    deploymentTargetId: cloudhub-us-east-2
+    deploymentStrategy: STANDARD
+    muleVersion: "4.9.0"
+    vCores: "0.1"
+    replica: 1
+    updateStrategy: rolling
+    lastMileSecurity: false
+    properties:
+      - profileId: c162d90a-0d70-4ce3-a7ce-bf83795e45d1
+        profileTypeId: da882f73-623b-4f2b-9f44-be0a66962907
